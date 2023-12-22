@@ -1,13 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import { Stack } from "@mantine/core";
+import reactLogo from "../assets/react.svg";
+import viteLogo from "/vite.svg";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function Home() {
+  const [count, setCount] = useState(0);
   return (
-    <>
+    <Stack gap={0} mt={"calc(50dvh - 240px)"} ta={"center"} w={"100vw"}>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -28,8 +27,8 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-    </>
-  )
+    </Stack>
+  );
 }
 
-export default App
+export default Home;
