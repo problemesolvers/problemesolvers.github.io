@@ -1,23 +1,14 @@
-import { Container, Text } from "@mantine/core";
+import { Anchor, Container, Text } from "@mantine/core";
+import { useDocumentTitle } from "@mantine/hooks";
 
 function About() {
+  useDocumentTitle("About | p.s");
   return (
     <Container className="about" size={"xs"}>
-      <Text ta={"left"} mt={"calc(50dvh - 240px)"}>
-        🏡 Hi, I'm Preston. <br />
-        Welcome to my portfolio website!
-        <br />
-        <br />
-        🧑‍💻 I have 8+ years of IT- and tech-industry experience.
-        <br />
-        🧬 I'm a software engineer by day spending most of my free time
-        learning—in addition to programming languages such as TypeScript and
-        Sass—different kinds of natural languages and cultures.
-        <br />
-        <br />
-        💼 Please feel free to look around from time to time whenever you're
-        here as I add more to this site about my profession, works, love of
-        languages and cultures, and myself.
+      <Text ta={"left"} mt={"calc(50dvh - 140px)"}>
+        🧮🧑‍💻🧩 Problem-solving code to common issues Preston (
+        <Anchor href="https://github.com/pjnalls">@pjnalls</Anchor>) has
+        encountered which can hopefully help others
       </Text>
     </Container>
   );

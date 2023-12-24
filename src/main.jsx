@@ -14,3 +14,5 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     </MantineProvider>
   </React.StrictMode>
 );
+
+router.navigate(window.location.href.split("?")[1]?.split("=")[1]);

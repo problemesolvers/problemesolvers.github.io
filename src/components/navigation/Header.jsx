@@ -3,15 +3,15 @@ import React from "react";
 
 function Header({ desktopOpened, mobileOpened, toggleDesktop, toggleMobile }) {
   return (
-    <Group  h="100%" justify={"space-between"} px="md">
+    <Group h="100%" justify={"space-between"} px="md">
       <Flex align={"center"} gap={12}>
         <Anchor href="/" w={24}>
-          <Text fw={"bolder"} fz={24}>p.s</Text>
+          <Text fw={"bolder"} fz={24} style={{ color: "#838bff" }}>
+            p.s
+          </Text>
         </Anchor>
         <Text fw={400} fz={16} pl={4}>
-          <Anchor href="/">
-            problem.solvers
-          </Anchor>
+          problem.solvers
         </Text>
       </Flex>
       <Group>
