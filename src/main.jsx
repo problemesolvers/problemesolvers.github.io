@@ -4,7 +4,7 @@ import { MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
 
 import { router } from "./pages/_router";
-import "./index.css";
+import "./index.scss";
 import { RouterProvider } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
